@@ -13,7 +13,6 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.aplikasi_kasir.database.DBHandler
 import com.example.aplikasi_kasir.database.OrderModel
-import com.example.aplikasi_kasir.ui.header_print
 import com.example.aplikasi_kasir.ui.laporan.LaporanActivity
 import com.example.aplikasi_kasir.ui.produk.ProdukActivity
 import com.example.aplikasi_kasir.ui.stok.StokActivity
@@ -78,7 +77,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btn_tentang_aplikasi.setOnClickListener {
-            val intent = Intent(this, header_print::class.java)
+            val intent = Intent(this, TentangActivity::class.java)
             startActivity(intent)
         }
 
